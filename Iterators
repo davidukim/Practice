@@ -1,0 +1,15 @@
+java.util 
+Interface Iterator<E>
+
+When is Iterator used in Java ? 
+  - To traverse the Collection (Going through the collection from initial index until the last)  --->  index[0], index[1], ... , index[size()-1]
+  - To access the Data Element in the collection.
+  - To delete the Data Element in the collection. 
+  
+3 Types of Iterator in Java : 
+  [1] Enumeration : Used for Legacy classes such as Vector and Hashtable. 
+      Limitations >> Cannot perform remove operation. Only forward iteration possible. 
+      
+  [2] Java Iterator : Can be applied on any collection object, thus general(universal). Can Read & Remove elements 
+      Limitations >> 
+  [3] ListIterator : 
