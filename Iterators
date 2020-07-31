@@ -11,5 +11,7 @@ When is Iterator used in Java ?
       Limitations >> Cannot perform remove operation. Only forward iteration possible. 
       
   [2] Java Iterator : Can be applied on any collection object, thus general(universal). Can Read & Remove elements 
-      Limitations >> 
-  [3] ListIterator : 
+      Limitations >> Iteration only in forward direction possible. Replacement and addition is not possible. 
+  
+  [3] ListIterator : Only applicable when there is list implemented classes , e.g. ArrayList, LinkedList.  Enables bi-directional iteration. 
+    
