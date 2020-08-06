@@ -1,0 +1,1 @@
+Create a variable to assign the list.next() to avoid NoSuchElementException, use the variable in place of using list.next() each time which could easily cause the error
