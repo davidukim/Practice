@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +10,8 @@ public class Main {
         addInOrder(placesToVisit, "Gwangju");
         addInOrder(placesToVisit, "Sokcho");
         printList(placesToVisit);
+
+        visit(placesToVisit);
     }
 
 
@@ -40,6 +39,22 @@ public class Main {
         }
         stringListIterator.add(newCity);
         return true;
+    }
+
+    private static void visit(LinkedList<String> cities){
+        Scanner scanner = new Scanner(System.in);
+        String cityToCheck = scanner.nextLine();
+        boolean flag = false;
+        for (String city : cities){
+            if (city.toLowerCase().equals(cityToCheck.toLowerCase())){
+                flag = true;
+            }
+        }
+        if (flag){
+            System.out.println("You have visited " + cityToCheck);
+        } else{
+            System.out.println("You have not visited " + cityToCheck);
+        }
     }
 
 }
